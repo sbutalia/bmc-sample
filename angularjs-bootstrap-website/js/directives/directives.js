@@ -1,0 +1,1 @@
+var nswebDirectives = angular.module('nsweb.directives',[]);

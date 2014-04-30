@@ -1,0 +1,61 @@
+
+<!--the main section starts -->	
+<div class="row-fluid" ng-controller="NorthContactController">
+    <div class="span4 north-contact-create-left">
+        <img src="images/nc-free-account-creation-north-contact-logo.png" class="prepend-1 append-bottom prepend-top" />
+        <p>North Contact is a free social CRM extension for North Social app users. Perfect for creating forms, list management, outbound emails, and auto-responders.</p>
+        <div class="grey" ></div>
+        <p>Fill in the  fields to set up your free North Contact user account. Once your account has been created, you will receive an email with additional information and log-in instructions.</p>
+        <img src="/images/ns-free-account-creation-arrow.png" class="pull-right" />
+    </div>
+    <!-- login box starts -->
+    <div class="span8 the-content north-contact-create-right">
+        <h2>Create Your Free Account</h2>
+        <div id="north-contact-activity" class="">
+            <div class="north-contact-activity">Creating your account.<img src="/images/north-contact-activity-indicator-main.gif" /></div>
+        </div>
+
+        <form method="post" role="form" class="span11">
+                <div class="north-contact-activity-message" style="display:none"></div>
+                <div class="form-group">
+                    <input type="text" size="52" id="firstname" name="firstname" required placeholder="First Name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" size="52" id="lastname" name="lastname" required placeholder="Last Name" />
+                </div>
+                <div class="form-group">
+                    <input type="email" size="52" id="email" name="email" required placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <input type="text" size="52" id="companyname" name="companyname" required placeholder="Company Name" />
+                </div>
+                <div class="form-group">
+                    <input type="text" size="52" id="username" name="username" required placeholder="Username" />
+                </div>
+                <div class="form-group">
+                    <input type="password" size="52" id="password" name="password" required placeholder="Password" />
+                </div>
+                <div class="form-group">
+                    <input type="password" size="52" id="repeat" name="repeat" required placeholder="Repeat Password" />
+                </div>
+
+            <div class="row form-footer">
+                <div class="span8 pull-left note">
+                    Note: The North  Contact system is SEPARATE from North Social applications. All data is stored in a secure log in site, accessible only to those with a username and password, NOT accessible to all Facebook admins for your page.
+                </div>
+                <div class="span3 pull-left">
+                    <input  type="submit" value="Create My Account" ng-click="createAccount()" class="btn-ns-get">
+                </div>
+            </div>
+        </form>
+
+        <div style="display:none">
+            <form method="post" id="loginForm" action="https://northsocial.createsend.com/login.aspx" >
+                <input type="text" name="username"  id="username2" value="" />
+                <input type="password" name="password" id="password2" value="" />
+            </form>
+        </div>
+    </div>
+    <!-- login box ends -->
+</div>
+<!--the main section ends -->

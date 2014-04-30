@@ -1,0 +1,29 @@
+
+<div class="row-fluid install-page">
+    <div class="span12 the-content">
+
+        <div ng-show="pagelistIsLoading">
+            <img src="/images/loading.gif"/>
+        </div>
+
+        <div class="facebookConnect" ng-show="facebookConnect">
+            <h3 id="fbLoginModalLabel">Welcome to North Social!</h3>
+			<p style="width: 500px; text-align: center;">Connect with Facebook in order to install North Social Applications and to receive bite sized social media tips and tricks to your inbox.</p>
+			<a class="fb_cbutton_large" title="Connect with Facebook" style="background: url('/images/popup_fb_cbutton.gif') no-repeat !important; display:block !important; margin:0px auto; width: 280px; height: 52px; cursor: pointer; margin-bottom: 30px;" ng-click="fbLogin()"></a>
+        </div>
+
+        <!-- Pagelist -->
+        <div ng-show="pagelistShowing" class="install-me">
+            <h3>Select Your Page To Get Started</h3>
+            <div class="dropdown">
+                <select id="pagesDropdown" ng-model="selectedItem">
+                    <option  ng-repeat="page in userPages" value="{{page.id}}">{{page.name}}</option>
+                </select>
+                <button class="btn-ns-get btn-ipg-install-app" ng-click="installapp()">{{nextButtonLabel}}</button>
+            </div>
+            <div class="error-list error"></div>
+            <div class="message-list"></div>
+            <p>TIP: If you do not see the page you are looking for, the application might already be installed under the cover photo. To check, go to your Page and click: Edit Page > Apps > Go to App - this is not an option for Page Admins.</p>
+        </div>
+    </div>
+</div>

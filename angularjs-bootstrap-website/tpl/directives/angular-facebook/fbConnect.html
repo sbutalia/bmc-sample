@@ -1,0 +1,19 @@
+<div>
+    <div ng-show="isLoading">
+        <img src="/images/loading.gif"/>
+    </div>
+
+    <div ng-show="isLoggedIn">
+      <div class='fbstuff_text'>
+        <div>Hi, {{user.first_name}}. North Social is using Facebook to personalize your experience.
+        </div>
+        <div class="profile-pic">
+            <img src='https://graph.facebook.com/{{user.id}}/picture?type=small'>
+        </div>
+      </div>
+    </div>
+
+    <div ng-show="!isLoggedIn && !isLoading">
+      <img src='images/fb-login.png' ng-click='fbLogin()'>
+    </div>
+</div>

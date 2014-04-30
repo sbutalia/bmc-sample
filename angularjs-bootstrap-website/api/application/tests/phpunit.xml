@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="../../modules/unittest/bootstrap.php">
+    <testsuites>
+        <testsuite name="Kohana_Unittest_TestCase">
+            <file>./classes/apitest.php</file>
+			<file>./classes/recurlytest.php</file>
+			<file>./classes/wufootest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>

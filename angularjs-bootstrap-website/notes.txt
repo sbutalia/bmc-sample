@@ -1,0 +1,11 @@
+//-- http://stackoverflow.com/questions/9197721/installing-one-application-by-another
+
+
+{
+    "status": "NOT_PAID",
+    "networkPageID": "593922290621448",
+    "partner": {
+        "APIKey": "k7GQOxXwF12",
+        "APIPassword": "z6qBsdDziF"
+    }
+}
