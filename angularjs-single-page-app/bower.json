@@ -1,0 +1,20 @@
+{
+    "name": "testSPA",
+    "version": "1.0.0",
+    "directory": "js/assets/plugins",
+    "dependencies": {
+        "angular": "1.2.19",
+        "angular-resource": "1.2.19",
+        "angular-cookies": "1.2.19",
+        "angular-animate": "1.2.19",
+        "angular-ui-utils": "bower",
+        "angular-socket-io": "0.6.x",
+        "angular-mocks": "1.2.19",
+        "underscore": "1.6.0",
+        "angular-ui-select2": "latest",
+        "angular-strap": "2.0.3",
+        "angular-moment": "0.7.1",
+        "angular-route": "1.x.x",
+        "angular-route": "1.x.x",
+    }
+}

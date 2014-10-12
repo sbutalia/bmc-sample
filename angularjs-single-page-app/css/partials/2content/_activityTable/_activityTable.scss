@@ -1,0 +1,176 @@
+/* Style for Activity Table=======================
+==================================================*/
+
+.fieldActivities,  {
+	//padding: 20px 30px;
+}
+
+.table.stacktable {
+	@extend %fontColor2;
+	@include border-radius(5px);
+	margin-bottom: 32px;
+	border: 1px solid $borderColorTable;
+	th {
+		position: relative;
+		@extend %bgColor3;
+		@extend %fontColor3;
+		@extend %textAlignCenter;
+		@extend %verticalAlignTop;
+		padding: 8px 18px 8px 10px;
+		font-size: 16px;
+		border-bottom: none;
+		span.currency {
+			@extend %fontColor2;
+		}
+		.sort {
+			display: block;
+			position: absolute;
+			@extend %cursorPointer;
+			width: 10px;
+			height: 14px;
+			right: 5px;
+			top: 10px;
+			background-position: right center;
+			background-image: url(../images/sortArrows.png);
+		}
+		&.headerSortUp, &.headerSortDown {
+			background-color: $bgColorMenuActive;
+		}
+		&.headerSortUp .sort {
+			background-image: url(../images/sortArrowsUp.png);
+		}
+		&.headerSortDown .sort {
+			background-image: url(../images/sortArrowsDown.png);
+		}
+	}
+	tr {
+		td {
+			padding: 9px 10px;
+			font-size: 15px;
+			@extend %verticalAlignMiddle;
+			
+			span {
+				vertical-align: top;
+				color: $bgActivityColorActive;
+			}
+			&.empty {
+				text-align: center;
+			}
+			&.edit {
+				@extend %textAlignCenter;
+				a {
+					display: inline-block;
+					width: 24px;
+					height: 24px;
+					@extend %verticalAlignMiddle;
+					background: url(../images/editField.png) 0 0 no-repeat;
+				}
+				&:hover {
+					@extend %bgColor6;
+					a {
+						background: url(../images/editFieldActive.png) 0 0 no-repeat;
+					}
+				}
+			}
+		}
+		td + td, th + th {
+			border-left: 1px solid $borderColorTable;
+		}
+	}
+}
+
+.stacktable {
+	&.small-only {
+		@extend %fontColor2;
+		width: 100%;
+		margin-bottom: 20px;
+		.st-head-row {
+			@extend %bgColor2;
+			@extend %fontColor3;
+			font-size: 16px;
+			padding: 5px 10px 5px 15px;
+
+			&.st-head-row-main {
+				@extend %textAlignCenter;
+				@extend %bgColor6;
+				font-size: 18px;
+			}
+		}
+		.st-key, .st-val {
+			@extend %textAlignLeft;
+			padding: 5px 10px 5px 15px;
+			font-size: 15px;
+			border-bottom: 1px solid $borderColorTable ;
+			a {
+				display: inline-block;
+				@extend %textAlignCenter;
+				@include border-radius(3px);
+				width: 34px;
+				height: 34px;
+				padding: 5px;
+				@extend %verticalAlignMiddle;
+				background: url(../images/editField.png) 5px 5px no-repeat;
+				&:hover {
+					background: url(../images/editFieldActive.png) 5px 5px no-repeat $bgActivityColorHover;
+				}
+			}
+		}
+		span.currency {
+			@extend %fontColor2;
+		}
+		a {
+			display: inline-block;
+			@extend %fontColor8;
+			@extend %textDecorNone;
+			padding: 2px 5px;
+			&:hover {
+				@extend %fontColor10;
+			}
+		}
+	}
+}
+
+.addActivity {
+	display: block;
+	@extend %fontColor4;
+	@extend %bgColor5;
+	@extend %textAlignCenter;
+	@include border-radius(5px);
+	padding: 10px 20px;
+	width: 175px;
+	font-size: 17px;
+	border: none;
+	&:hover {
+		@extend %bgColor6;
+	}
+	&:active {
+		@extend %bgColor7;
+	}
+}
+
+.stacktable.large-only {
+	display: table;
+}
+.stacktable.small-only {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.stacktable.large-only { display: none; }
+	.stacktable.small-only { display: table; }
+	.addActivity {
+		margin-left: 10px;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+@media (max-width: 479px) {
+	.fieldActivities,  {
+		padding: 0;
+	}
+	.addActivity {
+		margin: 0 auto 20px;
+	}
+}

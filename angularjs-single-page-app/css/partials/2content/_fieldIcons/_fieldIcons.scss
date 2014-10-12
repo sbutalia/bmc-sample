@@ -1,0 +1,25 @@
+/* Style for Field Icons large and small==============
+======================================================*/
+.small {
+	&.barley {
+		background-image: url(../images/barleySmall.png);
+	}
+	&.wheat {
+		background-image: url(../images/wheatSmall.png);
+	}
+	&.potato {
+		background-image: url(../images/potatoSmall.png);
+	}
+}
+
+.fieldName {
+	&.barley {
+		background-image: url(../images/barleyBig.png);
+	}
+	&.wheat {
+		background-image: url(../images/wheatBig.png);
+	}
+	&.potato {
+		background-image: url(../images/potatoBig.png);
+	}
+}

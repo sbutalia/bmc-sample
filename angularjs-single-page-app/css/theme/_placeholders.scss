@@ -1,0 +1,408 @@
+/* placeholders for changable elements 
+=====================================*/
+
+$colorBody: #fff;   //white
+$colorLinks: #4F7ADB; //#819CB8;  //blue
+
+$fontColor1: #4d4d4d; //grey:  user name, 
+$fontColor2: #808080; //grey:  field name
+$fontColor3: #000030; // Content table Headings
+$colorBlack: #000; //black
+$colorWhite: #fff; //white
+$currencyColor: #c5c5c5; //grey: currency color
+$fontColorFooter: #999; //footer font color
+
+$fontColorMenuItemActive: #4F7ADB;
+
+$shadowStartColor: #e7e7e7; //grey: topbar shadow start color
+$borderColorTable: #e6e6e6;  //table border color
+$borderColorSubMenu: #d9d9d9; // sub menu divider line color
+$borderColorInputActive: #52A8EC; //popup form-controls, inputs
+
+$bgColorMenu: #fff; //#d9d9d9; //menu background color
+$bgColorMenuActive: #EDF1FB; //#ccc; //menu active background color 
+$bgColorSubMenu: #f2f2f2; //sub menu background color
+$bgColorSubMenuActive: #e6e6e6; //sub menu active element background color
+$bgActivityColorHover: #3D5DA8; //#6f869e; //blue
+$bgActivityColorActive: #2A4175; //;//#4b5b6b; //blue
+
+$boxShadowColorBootstrap: #66AFE9;
+
+$colorUserSignupBg: #b3b3b3;
+
+$colorSignInUpStart: #628AE0;
+$colorSignInUpEnd: #4069D3;
+$colorUserLoginFormBorder: #c5c5c5;
+$colorUserLoginPrivacy: #d1d1d1;
+
+%fontColor1 {
+	/* color for user name  */
+	color: $fontColor1;
+}
+
+%fontColor2 {
+	/* color for field name  */
+	color: $fontColor2;
+}
+
+%fontColor3 {
+	/* color for Content table Headings   */
+	color: $fontColor3;
+}
+
+%fontColor4 {
+	/* color for activity  */
+	color: $colorWhite;
+}
+
+%fontColor5 {
+	/* color for    */
+	color: $colorBlack;
+}
+
+%fontColor6 {
+	/* color for footer   */
+	color: $fontColorFooter;
+}
+
+%fontColor7 {
+	/* color for currency  */
+	color: $currencyColor;
+}
+
+%fontColor8 {
+	/* color for add ne field  */
+	color: $colorLinks;
+}
+
+%fontColor9 {
+	/* color for delete edit and info links  */
+	color: $bgActivityColorHover;
+}
+
+%fontColor10 {
+	/* color for delete edit and info links  */
+	color: $bgActivityColorActive;
+}
+
+%fontColor11 {
+	/* color for delete edit and info links  */
+	color: $fontColorMenuItemActive;
+}
+
+%fontColor12 {
+	/* color for delete edit and info links  */
+	color: $colorUserLoginPrivacy;
+}
+
+
+
+%bgColor1 {
+	/* background-color for menu */
+	background-color: $bgColorMenu;
+}
+
+%bgColor2 {
+	/* background-color menu active element */
+	background-color: $bgColorMenuActive;
+}
+
+%bgColor3 {
+	/* background-color for submenu */
+	background-color: $colorWhite;
+}
+
+%bgColor4 {
+	/* background-color for submenu active element */
+	background-color: $bgColorSubMenuActive;
+}
+
+%bgColor5 {
+	/* background-color for toggles */
+	background-color: $colorLinks;
+}
+
+%bgColor6 {
+	/* background-color for activity hover */
+	background-color: $bgActivityColorHover;
+}
+%bgColor7 {
+	/* background-color for activity active */
+	background-color: $bgActivityColorActive;
+}
+%bgColor7 {
+	/* background-color for activity active */
+	background-color: $bgActivityColorActive;
+}
+
+%bgColor8 {
+	/* background-color for popup input, form-control */
+	background-color: $colorWhite;
+}
+
+%bgColor9 {
+	/* background-color for */
+	background-color: $bgColorSubMenu;
+}
+
+
+
+%borderColor1 {
+	/* border-color for table  */
+	border-color: $borderColorTable;
+}
+
+%borderColor2 {
+	/* border-color for submenu divider (add activity border bottom) */
+	border-color: $borderColorSubMenu;
+}
+
+
+
+%transitionOpacity1 {
+	-moz-transition: opacity ease-in-out 2s;
+	-o-transition: opacity ease-in-out 2s;
+	-webkit-transition: opacity ease-in-out 2s;
+	transition: opacity ease-in-out 2s;
+}
+
+%transitionOpacity2 {
+	-moz-transition: opacity ease-in-out 0.6s;
+	-o-transition: opacity ease-in-out 0.6s;
+	-webkit-transition: opacity ease-in-out 0.6s;
+	transition: opacity ease-in-out 0.6s;
+}
+%transitionOpacity3 {
+	-moz-transition: opacity ease-in-out 4s;
+	-o-transition: opacity ease-in-out 4s;
+	-webkit-transition: opacity ease-in-out 4s;
+	transition: opacity ease-in-out 4s;
+}
+
+/* placeholders for repeat elements 
+=====================================*/
+
+%fontHelveticaArialLucida {
+	font-family: helvetica,arial,"lucida grande",verdana,"メイリオ","ＭＳ Ｐゴシック",sans-serif;;
+}
+
+
+%fontStrong {
+	/* font weight for any text */
+	font-weight: bold;
+}
+
+%fontNormal {
+	/* font weight for any text */
+	font-weight: normal;
+}
+
+%textTransformUpper {
+	/* text transform for any text*/
+	text-transform: uppercase;
+}
+
+%textTransformLower {
+	/* text transform for any text*/
+	text-transform: lowercase;
+}
+
+%overflowScroll {
+	/* overflow scroll for any box */
+	overflow: scroll;
+}
+%overflowScrollY {
+	/* overflow scroll for any box */
+	overflow-y: scroll;
+}
+%overflowScrollX {
+	/* overflow scroll for any box */
+	overflow-x: scroll;
+}
+
+%overflowHidden {
+	/* overflow hidden for any box */
+	overflow: hidden;
+}
+
+%textDecorNone {
+	/* text decoration for any text */
+	text-decoration: none;
+}
+	
+%textDecorUnderline {
+	/* text decoration for any text */
+	text-decoration: underline;
+}
+
+%textAlignLeft {
+	/* text decoration for any text */
+	text-align: left;
+}
+
+%textAlignRight {
+	/* text decoration for any text */
+	text-align: right;
+}
+
+%listStyleNone {
+	/* list style for any list */
+	list-style: none;
+}
+
+%floatLeft {
+	/* float for any block */
+	float: left;
+}
+
+%floatRight {
+	/* float for any block */
+	float: right;
+}
+
+%borderStyleSolid {
+	/* border style for any element */
+	border-style: solid;
+}
+
+%borderNone {
+	/* border for any element */
+	border: none;
+}
+
+%borderInset {
+	/* border for any element */
+	border: inset;
+}
+
+%borderOutset {
+	/* border for any element */
+	border: outset;
+}
+
+%borderSolid {
+	/* border for any element */
+	border: solid;
+}
+
+%borderDashed {
+	/* border for any element */
+	border: dashed;
+}
+
+%borderDotted {
+	/* border for any element */
+	border: dotted;
+}
+
+%positionAbsolute {
+	/* position for any element */
+	position: absolute;
+}
+
+%positionRelative {
+	/* position for any element */
+	position: relative;
+}
+
+%positionCenter {
+ 	/* position center for any element*/
+	margin: 0 auto;
+}
+
+%boxSizingBorderBox {
+ /* box sizing for all element in pages */
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+%bgPosNoRepeat {
+	background-position: center center;
+	background-repeat: no-repeat no-repeat;
+}
+
+%bgColorTransparent {
+	/* background color transparent*/
+	background-color: transparent; 
+}
+
+%bgImageNone {
+	/* background image none*/
+	background-image:  none; 
+}
+
+%bgNone {
+	/* background image none*/
+	background:  none; 
+}
+
+%cursorPointer {
+	cursor: pointer;
+}
+
+%displayInlineBlock {
+	/*display style for any element*/
+	display: inline-block;
+}
+
+%displayBlock {
+	/*display style for any element*/
+	display: block;
+}
+
+%displayNone {
+	/*display style for any element*/
+	display: none;
+}
+
+%verticalAlignTop {
+	/* vertical align for any element*/
+	vertical-align: top;
+}
+%verticalAlignMiddle {
+	/* vertical align for any element*/
+	vertical-align: middle;
+}
+%verticalAlignSub {
+	/* vertical align for any element*/
+	vertical-align: sub;
+}
+%verticalAlignTop {
+	/* vertical align for any element*/
+	vertical-align: top;
+}
+%vertAlignTextTop {
+	/* vertical align for any element*/
+	vertical-align: text-top;
+}
+%vertAlignBaseline {
+	/* vertical align for any element*/
+	vertical-align: baseline;
+}
+
+%textAlignCenter {
+	/* text align for any element*/
+	text-align: center;
+}
+%textAlignLeft {
+	/* text align for any element*/
+	text-align: left;
+}
+%textAlignRight {
+	/* text align for any element*/
+	text-align: right
+}
+
+%visibilityHidden {
+	visibility: hidden;
+}
+
+%visibilityVisible {
+	visibility: visible;
+}
+
+%outlineNone {
+	/* outline for any element*/
+	outline: none;
+}

@@ -1,0 +1,36 @@
+/* Style for content Container=======================
+=====================================================*/
+
+ 
+ .content {
+ 	position:relative;
+ 	width: 61%;//calc(100% - 450px); 
+ 	left: 39%;//450px;
+ 	padding: 20px 30px;
+ }
+
+ @media (max-width: 991px) {
+ 	.content {
+ 		width: 73%; //calc(100% - 200px);
+ 		left: 27%; //200px;
+ 	}
+ }
+
+
+@media (max-width: 767px) {
+	.content {
+		width: 100%;
+		margin-top: 20px;
+		left: 0;
+		padding: 0;
+	}	
+}
+@media (max-width: 479px) {
+	.content {       	//delete later
+		width: 100%;
+		margin-top: 20px;
+		left: 0;
+		padding: 0;
+	}	
+}
+

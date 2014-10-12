@@ -1,0 +1,73 @@
+/*===========================================
+
+	baseElement.scss
+	* css style for base Elements
+
+=============================================*/
+
+*,
+*:before,
+*:after {
+ @extend %boxSizingBorderBox;
+}
+
+*, *:focus {
+	outline: none !important;
+}
+
+body {
+	//@extend %overflowScrollY;
+	@extend %fontColor3;
+	@extend %fontHelveticaArialLucida;
+	font-size: 13px;
+	background: #ffffff;
+	.container {
+		width: 1170px;  
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0 auto;
+	}
+	
+}
+
+@media (max-width: 1169px) {
+	body {
+		.container {
+			width: auto;
+			padding: 0 15px;
+		}
+	}	
+}
+
+
+
+.strong {
+	@extend %fontStrong;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.pull-left {
+	float: left;
+}
+.pull-right {
+	float: right;
+}
+
+.marginTop {
+	margin-top: 20px !important;
+}
+
+

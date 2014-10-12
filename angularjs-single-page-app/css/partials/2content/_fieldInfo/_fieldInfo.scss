@@ -1,0 +1,109 @@
+/* Style for Field Info=======================
+==============================================*/
+
+.fieldHead {
+	//padding: 0 10px;
+}
+
+#fieldInfoTable {
+	td {
+		@extend %borderNone;
+		font-size: 15px;
+		padding: 9px 10px 9px 0px;
+		&.note {
+			@extend %fontColor2;
+			max-width: 150px;
+			label {
+				display: inline-block;
+			}
+			p {
+				display: block;
+				max-width: 100%;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+		}
+		.viewMore, .add {
+			@extend %verticalAlignTop;
+			@extend %textDecorNone;
+			@extend %fontColor8;
+			&:hover {
+				@extend %fontColor10;
+			}
+		}
+
+		label {
+			@extend %fontColor2;
+		}
+		.size, .yield, .price {
+			@extend %fontStrong;
+		}
+		.size, .yield {
+			&:after {
+				content: " Ac.";
+			}
+		}
+		.price {
+			&:before {
+				content: "$";
+			}
+		}
+	}
+	tr {
+		&.bordered {
+			td {
+				@extend %verticalAlignMiddle;
+				border-bottom: 1px solid $borderColorSubMenu;
+				border-top: 1px solid $borderColorSubMenu;
+			}
+		}
+	}
+}
+
+.fieldName {
+	display: inline-block;
+	@extend %fontColor1;
+	font-size: 20px;
+	padding: 5px 5px 5px 30px ;
+	background-position: 0px 11px;
+	background-repeat: no-repeat;
+	img {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		margin-right: 5px;
+	}
+}
+	
+.editField {
+	display: inline-block;
+	@extend %textAlignRight;
+	@extend %cursorPointer;
+	@include border-radius(3px);
+	padding: 10px;
+	margin-top: 5px;
+	width: 44px;
+	height: 44px;
+	@include border-radius(3px);
+	background: url(../images/editField.png) 10px 10px no-repeat;
+	&:hover {
+		background: url(../images/editFieldActive.png) 10px 10px no-repeat $bgActivityColorHover;
+	}
+	&:active {
+		background: url(../images/editFieldActive.png) 10px 10px no-repeat $bgActivityColorActive;
+	}
+}
+
+
+@media (max-width: 767px) {
+	#fieldInfoTable {
+		border: none;
+		td {
+			padding: 9px 10px 9px 15px;
+		}
+	}
+	.fieldHead {
+		padding:  0 15px;
+	}
+}

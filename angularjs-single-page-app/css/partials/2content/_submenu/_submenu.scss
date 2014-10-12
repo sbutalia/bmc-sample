@@ -1,0 +1,138 @@
+/* style for submenu =======================
+============================================*/
+
+.subMenu {
+	font-size: 0;
+	width: 18%; //200px;
+	//height: 100%;
+	bottom: 0;
+	top: 75px;
+	position: absolute;
+	left: 21%; //250px;
+	border-right: 1px solid $borderColorTable;
+	border-left: 1px solid $borderColorTable;
+	@extend %bgColor8;
+	.addNewField {
+		display: block;
+		@extend %fontColor8;
+		@extend %bgColor8;
+		width: 100%;
+		padding: 13px 20px 12px;
+		background: none;
+		border: none;
+		border-bottom: 1px solid $borderColorTable;
+		font-size: 18px;
+		text-align: center; 
+		&:hover {
+			@extend %fontColor4;
+			@extend %bgColor6;
+		}
+		&:active {
+			@extend %fontColor4;
+			@extend %bgColor7;
+		}
+	}
+	.toggleFields {
+		display: none;
+		@extend %bgColor8;
+		@extend %fontColor4;
+		border: none;
+		width: 18%;
+		border-bottom: 1px solid $borderColorTable; 
+		border-left: 1px solid $borderColorTable; 
+		margin: 0;
+		padding: 23px 0;
+		vertical-align: top;
+		.caret {
+			border-top: 6px solid $colorLinks;
+			border-right: 7px solid transparent;
+			border-left: 7px solid transparent;
+		}
+		.caret.caret-up {
+			border-top: none;
+			border-bottom: 6px solid $colorLinks; 
+		}
+		&:hover {
+			@extend %bgColor6;
+			.caret, .caret.caret-up {
+				border-top-color: $colorWhite;
+				border-bottom-color: $colorWhite;
+			}
+		}
+		&:active {
+			@extend %bgColor7;
+			.caret, .caret.caret-up {
+				border-top-color: $colorWhite;
+				border-bottom-color: $colorWhite;
+			}
+		}
+	}
+}
+.fields {
+	li {
+		display: block;
+		a {
+			display: block;
+			@extend %textDecorNone;
+			padding: 14px 20px 14px 40px;
+			font-size: 16px;
+			line-height: 22px;
+			@extend %fontColor1;
+			@extend %bgColor3;
+			background-position: 15px 12px;
+			background-repeat: no-repeat;
+			&:hover {
+				@extend %textDecorNone;
+				@extend %bgColor2;
+			}
+			img {
+				width: 24px; 
+				height: 24px;
+				@include border-radius(16px);
+				margin-right: 10px;
+				@extend %verticalAlignMiddle;
+			}
+		}
+		&.active {
+			a {
+				@extend %bgColor2;
+			}
+		}
+	}
+}
+
+	
+@media (max-width: 991px) {
+	#sub-menu {
+		width: 27%;
+		left: 0;
+	}
+}
+@media (max-width: 767px) {
+	#sub-menu {
+		position: static;
+		width: 100%;
+		height: auto;
+	}
+	.subMenu {
+		.addNewField {
+			display: inline-block;
+			width: 82%;
+		}
+		.toggleFields {
+			display: inline-block;
+		}
+	}
+	.fields {
+		display: none;
+	}
+}
+
+@media (max-width: 479px) {
+	#sub-menu {				//delete later
+		width: 100%;		
+		height: auto;
+		position: static;
+	}
+
+}

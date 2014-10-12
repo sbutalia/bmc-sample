@@ -1,0 +1,75 @@
+/* style for right menu User Settings==============
+===================================================*/
+
+.user {
+	.userSettings {
+		display: block;
+		padding: 12px 15px 13px 10px;
+		@extend %textDecorNone;
+		img {
+			border-radius: 25px;
+			width: 50px;
+			height: 50px;
+			margin-right: 6px;
+			vertical-align: middle;
+		}
+		span {
+			display: inline-block;
+			@extend %verticalAlignMiddle;
+			margin-right: 1px;
+			@extend %fontColor1;
+		}
+		.userName {
+			@extend %fontColor1;
+			@extend %verticalAlignMiddle;
+			font-size: 20px;
+			line-height: 24px;
+			max-width: 110px;
+			max-height: 48px;
+			overflow: hidden;
+		}
+		.caret {
+			@extend %verticalAlignMiddle;
+			border-left: 7px solid transparent;
+			border-right: 7px solid transparent;
+			border-top: 7px solid;
+		}
+		.settings {
+			display: none;
+			@extend %verticalAlignMiddle;
+		}
+		.divider {
+			display: inline-block;
+			@extend %verticalAlignMiddle;
+			@extend %bgColor1;
+			height: 50px;
+			width: 2px;
+			margin-left: 5px;
+		}
+		.settingsSymbol {
+			display: inline-block;
+			@extend %verticalAlignMiddle;
+			width: 34px;
+			height: 34px;
+			background: url(../images/userSettings.png) 0 0 no-repeat;
+		}
+	}
+	.dropdown-menu {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.user {
+		width: 100%;
+		.userSettings {
+			.settings {
+				display: inline-block;
+			}
+			.caret {
+				display: none;
+			}
+		}
+	}
+}

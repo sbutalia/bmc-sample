@@ -1,0 +1,23 @@
+<div class="bgLogin">
+    <div class="userDialogWrapper">
+        <div class="loginLogo">
+            <img src="images/loginLogo.png" class="logoImg">
+        </div>
+        <form role="form" class="signUp" id="signIn">
+            <div class="alert alert-danger" ng-show="errorMessage">
+                {{errorMessage}}
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="inputEmail" ng-model="user.email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="code" class="form-control" id="inputCode" ng-model="user.code" placeholder="Code">
+            </div>
+            <button type="submit" ng-click="clickSignIn()">Sign In</button>
+        </form>
+        <div class="termsPrivacy">
+            <a href="#">Forgot your code?</a>
+        </div>
+        <a href="#" class="back">Back</a>
+    </div>
+</div>

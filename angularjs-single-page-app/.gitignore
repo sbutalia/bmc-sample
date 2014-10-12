@@ -1,0 +1,16 @@
+*.log
+.idea
+.nodemonignore
+.sass-cache
+.slugignore
+.vagrant
+js/assets/plugins/
+
+#Mac OS X
+.DS_Store
+
+#Sublime Text
+*.sublime-project
+*.sublime-workspace
+npm-shrinkwrap.json
+

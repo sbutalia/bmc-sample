@@ -1,0 +1,274 @@
+/* Style for Popup windows ===========================
+======================================================*/
+
+.modalDialog {
+	font-size: 18px;
+	line-height: 22px;
+	p {
+		@extend %fontColor2;
+		font-size: 14px;
+		&.info {
+			@extend %textAlignCenter;
+		}
+		&.noteInfo {
+			@extend %textAlignLeft;
+		}
+	}
+	.modal-dialog {
+		width: 420px;
+		&.readOnly {
+			.form-control {
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				-o-user-select: none;
+				user-select: none;        
+			}
+		}
+	}
+	.modal-body {
+		padding: 5px 15px 10px;
+	}
+	.modal-header {
+		@extend %textAlignCenter;
+		border: none;
+		padding: 15px 15px 0;
+		.close {
+			display: block;
+			@include border-radius(15px);
+			width: 24px;
+			height: 24px;
+			opacity: 1;
+			background: url(../images/popupCloseIcon.png) 5px 5px no-repeat;
+			&:hover, &:active {
+				background: url(../images/popupCloseIcon.png) 5px 5px no-repeat $bgActivityColorActive;
+			}
+		}
+	}
+	.saveDiscard {
+		@extend %textAlignCenter;
+	}
+	.modalForm {
+		padding: 0 45px 20px;
+	}
+	.form-control {
+		@extend %fontColor2;
+		@extend %borderColor1;
+		padding: 10px;
+		&:active, &:focus {
+			border-color: $borderColorInputActive;
+		}
+		&[readonly] {
+			@extend %bgColor8;
+			box-shadow: none;
+			cursor: text;
+			&:active, &:focus {
+				@include box-shadow(0, 0, 8px, $boxShadowColorBootstrap, 1);
+			}
+		}
+	}
+	h2 {
+		display: block;
+		@extend %fontColor1;
+		font-size: 20px;
+		line-height: 22px;
+		margin: 0 45px;
+		&.fieldName {
+			display: inline-block;
+			padding: 15px 10px 15px 40px ;
+		}
+	}
+	input, select {
+		height: 42px;
+		padding-bottom: 7px
+	}
+
+	label {
+		@extend %fontColor3;
+		width: 100%;
+		font-size: 16px;
+		margin-bottom: 4px;
+		span {
+			@extend %fontColor2;
+		}
+	}
+	.short {
+		width: 144px;
+	}
+	textarea {
+		@extend %fontColor2;
+		overflow-y: scroll;
+		resize: none;
+		height: 142px;
+	}
+	button {
+		margin-top: 10px;
+		display: inline-block;
+		text-align: center;
+		@extend %borderNone;
+
+		&.save, &.cancel {
+			width: 96px;
+			font-size: 17px;
+		}
+		
+		&.save {
+			@extend %fontColor4;
+			@extend %bgColor6;
+			margin-right: 5px;
+			&:hover, &:active {
+				@extend %bgColor7;
+			}
+		}
+		&.cancel {
+			@extend %fontColor8;
+			&:hover, &:active {
+				@extend %fontColor4;
+				@extend %bgColor7;
+			}
+		}
+	}
+
+	.selector {
+		margin-top: 0;
+	}
+	.btn-input {
+		display: block;
+	}
+	 
+	.btn-input .btn.form-control {
+		text-align: left;
+		height: 42px;
+		@extend %fontColor2;
+		@extend %borderColor1;
+		@extend %bgColor8;
+		padding: 10px;
+		border: 1px solid $borderColorTable;
+		&:active, &:focus {
+			border-color: $borderColorInputActive;
+			@include box-shadow(0, 0, 8px, $boxShadowColorBootstrap, 1);
+		}
+	}
+	 
+	.btn-input .btn.form-control span:first-child {
+		left: 10px;
+		overflow: hidden;
+		//position: absolute;
+		right: 25px;
+		line-height: 22px;
+	}
+	
+	.btn.form-control.selector {
+		padding: 0;
+	}
+	.btn-input .btn.form-control .caret {
+		margin-top: -1px;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+	}
+	.options.dropdown-menu {
+		width: 100%;
+	}
+	.btn-group.open .dropdown-toggle {
+		box-shadow: none;
+	}
+	span.listItem {
+		display: block;
+		@extend %fontColor2;
+		@extend %cursorPointer;
+		&:hover, &:active {
+			@extend %fontColor4;
+			background-color: $bgActivityColorHover;
+		}
+		padding: 10px;
+		&.withBg {
+			padding-left: 35px;
+			background: url(../images/default.png) 7px 8px no-repeat;
+			&:hover, &:active {
+				@extend %fontColor4;
+				background-color: $bgActivityColorHover;
+			}
+			&.default {
+				background-image: url(../images/default.png);
+			}
+			&.barley {
+				background-image: url(../images/barley.png);
+			}
+			&.potato {
+				background-image: url(../images/potato.png);
+			}
+			&.wheat {
+				background-image: url(../images/wheat.png);
+			}
+		}
+	}
+	.multiply {
+		font-size: 15px;
+		position: absolute;
+		@extend %fontColor7;
+		left: 49%;
+		top: 40%;
+		text-align: center;
+	}
+}
+
+.deleteField {
+	display: inline-block;
+	@extend %textAlignRight;
+	@extend %cursorPointer;
+	@include border-radius(3px);
+	padding: 10px;
+	padding-top: 5px;
+	width: 42px;
+	height: 44px;
+	background: url(../images/deleteField.png) 10px 10px no-repeat;
+	&:hover {
+		background: url(../images/deleteFieldActive.png) 10px 10px no-repeat $bgActivityColorHover;
+	}
+	&:active {
+		background: url(../images/deleteFieldActive.png) 10px 10px no-repeat $bgActivityColorActive;
+	}
+}
+/*  selectpicker plugin 
+
+.btn-group.bootstrap-select  {
+	padding: 0;
+	.selectpicker {
+		@extend %fontColor2;
+		@extend %borderColor1;
+		margin-top: 0;
+		padding: 10px;
+		&:active, &:focus {
+			border-color: $borderColorInputActive;
+		}
+	}
+}
+*/
+@media (max-width: 767px) {
+	.modalDialog {
+		.modal-dialog {
+			margin: 10px auto;
+		}
+	}
+}
+@media (max-width: 479px) {
+	.modalDialog {
+		.modalForm {
+			padding: 0 15px 20px;
+		}
+		.modal-dialog {
+			width: 100%;
+		}
+		.short {
+			float: none !important;
+			width: 100%;
+		}
+		h2 {
+			margin: 0 15px;
+		}
+		.multiply {
+			display: none;
+		}
+	}
+}
