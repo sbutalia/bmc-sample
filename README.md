@@ -30,8 +30,13 @@ Techonologies & concepts:
 * Bootstrap
 * SASS
 * Bower
+* External REST API Integration (Create/Update User & Login)
 
 [AngularJS]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website/js
 [Unit testing - Jasmine]:https://github.com/sbutalia/bmc-sample/blob/master/angularjs-bootstrap-website/js/test/install.js
 [custom directives]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website/js/directives
 [SASS]:https://github.com/sbutalia/bmc-sample/blob/master/angularjs-single-page-app/css/style.scss
+
+[angularjs-bootstrap-website]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website
+[angularjs-single-page-app]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-single-page-app
+
