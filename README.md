@@ -10,7 +10,7 @@ Some of my favorite tools and frameworks along with AngularJS are:
 > SASS - Used to simplify CSS development by using reusable blocks of style.
 > Jasmine - Used to create behavior driven test cases.
 
-angularjs-bootstrap-website
+[angularjs-bootstrap-website]
 ---------------------------
 Complete Single Page Application built using Bootstrap and AngularJS. Includes [custom directives] that work with the Facebook Graph API.
 
@@ -21,7 +21,7 @@ Techonologies & concepts:
 * [Unit testing - Jasmine]
 * Recurly API Integration
 
-angularjs-single-page-app
+[angularjs-single-page-app]
 ---------------------------
 Single page applicaiton built using AngularJS, SASS, & Bootstrap.
 
