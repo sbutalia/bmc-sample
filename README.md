@@ -12,11 +12,16 @@ Some of my favorite tools and frameworks along with AngularJS are:
 
 angularjs-bootstrap-website
 ---------------------------
-Complete Single Page Application built using Bootstrap and AngularJS. Includes [custom directives]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website/js/directives that work with the Facebook Graph API.
+Complete Single Page Application built using Bootstrap and AngularJS. Includes [custom directives] that work with the Facebook Graph API.
 
 Techonologies & concepts:
-* [AngularJS]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website/js
+* [AngularJS]
 * Bootstrap
 * PHP - Kohana
-* [Unit testing - Jasmine]:https://github.com/sbutalia/bmc-sample/blob/master/angularjs-bootstrap-website/js/test/install.js
+* [Unit testing - Jasmine]
 * Recurly API Integration
+
+
+[AngularJS]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website/js
+[Unit testing - Jasmine]:https://github.com/sbutalia/bmc-sample/blob/master/angularjs-bootstrap-website/js/test/install.js
+[custom directives]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website/js/directives
