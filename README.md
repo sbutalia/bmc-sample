@@ -21,7 +21,17 @@ Techonologies & concepts:
 * [Unit testing - Jasmine]
 * Recurly API Integration
 
+angularjs-single-page-app
+---------------------------
+Single page applicaiton built using AngularJS, SASS, & Bootstrap.
+
+Techonologies & concepts:
+* AngularJS
+* Bootstrap
+* SASS
+* Bower
 
 [AngularJS]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website/js
 [Unit testing - Jasmine]:https://github.com/sbutalia/bmc-sample/blob/master/angularjs-bootstrap-website/js/test/install.js
 [custom directives]:https://github.com/sbutalia/bmc-sample/tree/master/angularjs-bootstrap-website/js/directives
+[SASS]:https://github.com/sbutalia/bmc-sample/blob/master/angularjs-single-page-app/css/style.scss
